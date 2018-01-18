@@ -1,0 +1,25 @@
+#include "TeleporterMonster.hpp"
+
+
+
+TeleporterMonster::TeleporterMonster(Position _pos) :
+	Monster(DEFAULT_MONSTER_HEALTH, DEFAULT_MONSTER_STRENGTH, DEFAULT_MONSTER_DEXTERITY,
+		DEFAULT_MONSTER_CONSTITUTION, DEFAULT_MONSTER_INTELLIGENCE,
+		DEFAULT_MONSTER_WISDOM, DEFAULT_MONSTER_CHARISMA, _pos)
+{
+}
+
+TeleporterMonster::TeleporterMonster(int health, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma) :
+	Monster(health, strength, dexterity, constitution, intelligence, wisdom, charisma)
+{
+}
+
+TeleporterMonster::TeleporterMonster(int health, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, Position position) :
+	Monster(health, strength, dexterity, constitution, intelligence, wisdom, charisma, position)
+{
+}
+
+
+TeleporterMonster::~TeleporterMonster()
+{
+}
